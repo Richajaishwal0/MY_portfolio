@@ -1,0 +1,80 @@
+html, body {
+    background: #333;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .svg-wrapper {
+    height: 60px;
+      margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #98ede7;
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+  }
+  .text button{
+    background-color: #333;
+    border:none;
+    font-size: 30px;
+    letter-spacing: 3.5px;
+    color:transparent;
+    animation: effect 2s linear infinite;
+    
+  }
+  @keyframes effect {
+    0% {
+        background: linear-gradient(#4eecee, #d91aff);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#3CE7D7, #c1c4ed);
+        -webkit-background-clip: text;
+    }
+}
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+      
+
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+   
+    animation: 0.5s draw linear forwards;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    background-color: #111;
+  }
+  canvas {
+    display: block;
+  }
