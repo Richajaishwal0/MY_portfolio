@@ -4,14 +4,20 @@ html, body {
     overflow: hidden;
     text-align: center;
   }
-  
+  .wrappers{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+    flex-wrap: wrap;
+  }
   .svg-wrapper {
     height: 60px;
-      margin: 0 auto;
+    margin: 0 auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
+    transform: translateY(-800%);
+    width: 420px;
   }
   
   .shape {
@@ -40,6 +46,9 @@ html, body {
     animation: effect 2s linear infinite;
     
   }
+  .text:hover .wrapper{
+    display:none;
+  }
   @keyframes effect {
     0% {
         background: linear-gradient(#4eecee, #d91aff);
@@ -67,7 +76,6 @@ html, body {
   }
   
   .svg-wrapper:hover .shape {
-   
     animation: 0.5s draw linear forwards;
   }
 
@@ -77,4 +85,7 @@ html, body {
   }
   canvas {
     display: block;
+  }
+  .text a{
+    text-decoration: none;
   }
