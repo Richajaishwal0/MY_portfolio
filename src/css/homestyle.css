@@ -75,8 +75,37 @@ section{
     min-height:100vh;
     width:100vw;
 }
+#home{
+    
+}
+.sections
+{
+    height:auto;
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.intro-me{
+    height:40vh;
+    width:100vw;
+}
+.m-about{
+    height:400px;
+    width:300px;
+    border:2px solid  rgb(9, 6, 6);
+    /* background: red; */
+    top:500px;
+    /* position: absolute; */
+    margin:5px;
+    bottom:200px;
+    /* background: #000; */
+}
+#me{
+    /* image: url('../src/assest/about.png'); */
+}
 #about{
-background: #000;
 
 }
 #project{
@@ -88,3 +117,4 @@ background: #000;
 #contact{
    background: blue; 
 }
+
